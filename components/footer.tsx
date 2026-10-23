@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { Brand } from "./site-header";
+
+export function Footer(){return <footer className="footer"><div className="container"><div className="footer-grid"><div><Brand/><p style={{color:"var(--muted)",fontSize:13,lineHeight:1.7,maxWidth:270,marginTop:18}}>Thoughtful scheduling for businesses that care about every client experience.</p></div><div><h4>Product</h4><Link href="/book">Book a visit</Link><Link href="/admin">Dashboard</Link><Link href="/account">Customer area</Link></div><div><h4>Explore</h4><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div><div><h4>Demo studio</h4><a href="mailto:studio@northandrow.example">studio@northandrow.example</a><span style={{color:"var(--muted)",fontSize:13}}>Warsaw, Poland</span></div></div><div className="copyright"><span>© 2026 BookingFlow. Portfolio demonstration.</span><span>Privacy · Terms · Accessibility</span></div></div></footer>}
